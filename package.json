@@ -4,11 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "clean": "rm -rf dist",
+    "clean": "rm -rf .dist",
     "nodemon": "nodemon --inspect --watch webpack.dev.config.js --watch webpack.common.config.js --exec \"webpack-dev-server --config webpack.dev.config.js\"",
     "dev": "npm run clean && npm run nodemon",
     "build": "npm run clean && webpack --config webpack.prod.config.js --env.prod",
-    "storybook": "start-storybook"
+    "storybook": "start-storybook",
+    "build-storybook": "build-storybook -c .storybook -o .dist_ui"
   },
   "author": "",
   "license": "ISC",
@@ -25,7 +26,6 @@
     "css-loader": "^3.4.2",
     "eslint": "^6.8.0",
     "eslint-config-airbnb": "^18.0.1",
-    "eslint-config-airbnb-base": "^14.0.0",
     "eslint-loader": "^3.0.3",
     "eslint-plugin-import": "^2.20.1",
     "eslint-plugin-jsx-a11y": "^6.2.3",

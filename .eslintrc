@@ -1,12 +1,11 @@
 {
-    "extends": "airbnb-base",
+    "extends": "airbnb",
     "rules": {
+        "semi": 0,
         "import/no-unresolved": "off",
-        "eol-last": "off"
     },
     "env": {
-        "es6": false,
-        "jquery": true,
+        "es6": true,
         "browser": true,
         "node": true
     }

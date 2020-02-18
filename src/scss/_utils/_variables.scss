@@ -1,0 +1,11 @@
+$colors: (
+    brand: #0076a9,
+    brand-light: lighten(#0076a9, 30%),
+    gray-primary: #aaa,
+    gray-dark: darken(#aaa, 30%),
+    gray-light: lighten(#aaa, 30%)
+);
+
+@function color($color-name: brand) {
+    @return map-get($colors, $color-name);
+}

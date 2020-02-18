@@ -6,7 +6,7 @@ module.exports = merge(common, {
   mode: 'development',
   devtool: 'source-map',
   devServer: {
-    contentBase: 'dist',
+    contentBase: '.dist',
     port: 9999,
     overlay: true,
     open: true,

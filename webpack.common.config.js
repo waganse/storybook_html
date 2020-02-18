@@ -16,12 +16,11 @@ const webpackConfig = {
   entry: entries,
   output: {
     filename: 'js/[name]-bundle.js',
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, '.dist'),
     publicPath: '/'
   },
   resolve: {
     alias: {
-      vue$: 'vue/dist/vue.esm.js',
       '@JS': path.resolve(__dirname, 'src/js'),
       '@SCSS': path.resolve(__dirname, 'src/scss'),
     },
@@ -44,7 +43,7 @@ const webpackConfig = {
           {
             loader: 'eslint-loader',
             options: {
-              configFile: '.eslintrc_es6',
+              configFile: '.eslintrc',
               enforce: 'pre',
             }
           }

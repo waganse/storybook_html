@@ -1,4 +1,27 @@
+@import './_utils/reset';
+@import './_utils/variables';
+@import './_utils/mixins';
+
+body * {
+    font-size: 1.2rem;
+
+    @include mq(md) {
+        font-size: 1.4rem;
+    }
+}
+
 button {
-    color: #0f0;
+    background: color(gray-light);
+    border: 1px solid color(gray-primary);
+    color: color(gray-dark);
     font-weight: bold;
+}
+
+#bg {
+    clip-path: polygon(100% 0, 100% 82%, 45% 100%, 0 100%, 0 0);
+    background: color(brand-light);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
 }

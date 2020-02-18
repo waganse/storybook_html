@@ -32,6 +32,6 @@ export default create({
   inputBorderRadius: 4,
 
   brandTitle: 'My custom storybook',
-  brandUrl: 'https://airdesign.ai/',
-  brandImage: 'https://airdesign.ai/wp-content/uploads/2019/05/air-40.png',
+  brandUrl: 'https://yosuke-sato.com/',
+  brandImage: 'https://time-is-life.fun/wp-content/uploads/2019/10/cropped-suit-673697_1920.jpg',
 });
