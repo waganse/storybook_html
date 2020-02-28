@@ -1,0 +1,21 @@
+@import './_utils/reset';
+@import './_utils/variables';
+@import './_utils/mixins';
+
+body * {
+    font-size: 1.2rem;
+
+    @include mq(md) {
+        font-size: 1.4rem;
+    }
+}
+
+img {
+    vertical-align: bottom;
+}
+
+.catch {
+    background: url(../img/bg_texture.png) 0 0 repeat;
+    width: 100%;
+    height: 100vh;
+}

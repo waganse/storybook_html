@@ -98,14 +98,15 @@ const webpackConfig = {
             loader: 'url-loader',
             options: {
               limit: 102400,
-              outputPath: 'img/'
+              outputPath: 'img/',
+              name: '[name].[ext]'
             }
           },
           {
             loader: 'image-webpack-loader',
             options: {
               pngquant: {
-                quality: '80'
+                quality: [0.65, 0.8]
               }
             }
           }
