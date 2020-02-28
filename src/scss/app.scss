@@ -5,6 +5,7 @@
 body * {
     font-family: 'M PLUS Rounded 1c';
     font-size: 1.2rem;
+    color: #444;
 
     @include mq(md) {
         font-size: 1.4rem;
